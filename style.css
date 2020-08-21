@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+hr {
+    margin: 10px;
+}
+table {
+    width: 80%;
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+a.judul {
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+}
+a.judul:hover {
+    text-decoration: underline;
+}
