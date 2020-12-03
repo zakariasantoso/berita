@@ -5,8 +5,7 @@ if (isset($_GET['id'])) {
     $query = mysqli_query($conn, "SELECT * FROM berita WHERE id = $id");
 }
 
-// var_dump($berita);
-// die;
+
 ?>
 <?php if (isset($_GET['id'])) { ?>
     <table cellspacing="21" cellpadding="21">
@@ -35,7 +34,7 @@ if (isset($_GET['id'])) {
                     <a href="?page=home.php&id=<?= $row['id']; ?>" class="judul">
                         <h2><?= $row['judul']; ?></h2>
                     </a>
-                    <?= $row['sinopsis']; ?>...<a href="?page=home.php&id=<?= $row['id']; ?>">Read more</a>
+                    <?= substr($row['isi'], 0, 300); ?>...<a href="?page=home.php&id=<?= $row['id']; ?>">Read more</a>
                 </td>
             </tr>
         <?php } ?>
